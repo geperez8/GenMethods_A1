@@ -1,7 +1,25 @@
+html{
+    font-family: 'Nunito', sans-serif;
+    background-color: aliceblue;
+}
+
 #header{
     display: flex;
 }
 
 #headshot{
-    width : 60px;
+    width : 300px;
+    border-radius: 20px;
+}
+
+#header > div {
+    width : 30%;
+    margin: 20px 10%;
+    text-align: center;
+}
+
+#primaryButton{
+    background-color: white;
+    border-radius: 10px;
+    padding: 7px 12px;
 }

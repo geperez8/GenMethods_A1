@@ -4,13 +4,17 @@ let theme = "light";
 
 const changeTheme = () => {
   if (theme === "light") {
-    console.log("switching to dark")
+    
     document.querySelector('html').style.backgroundColor = "darkblue";
+    document.querySelector('html').style.color = "white";
+
     theme = "dark"
   }
   else{
-    console.log("switching to light")
+
     document.querySelector('html').style.backgroundColor = "aliceblue";
+    document.querySelector('html').style.color = "black";
+
     theme = "light"
   }
 };

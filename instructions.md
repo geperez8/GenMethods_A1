@@ -9,10 +9,10 @@ Make your own site
 download the tgz (a zipped file) file from Glitch
 (bottom row -> Tools -> Import/Export -> download)
 Your site must have (but will probably have more):
-at least one asset used
-at least 5 HTML elements
-at least 5 CSS selectors used (ie, 5 blocks in the CSS file)
-at least one button that does something with JS
+    []at least one asset used
+    []at least 5 HTML elements
+    []at least 5 CSS selectors used (ie, 5 blocks in the CSS file)
+    []at least one button that does something with JS
 Organize with the squad to make a squad page
 Have all the squad's glitch handles and any links
 Submit it on Canvas

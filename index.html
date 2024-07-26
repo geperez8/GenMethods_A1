@@ -3,29 +3,167 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title>Gerardo's webpage</title>
+    <!--     Load google fonts, if you want  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Nunito:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Gerardo's Website </title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <!--     <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="Kate's Example Webpage"
+    /> -->
+
+    <!-- Social media and google-searchability -->
+    <!--     <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta              
+      property="og:description"
+      content="Kate's Example Webpage"
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" /> -->
 
     <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
 
     <!-- Import the webpage's javascript file -->
-    <script src="app.js" defer></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-    </style>
+    <script src="/app.js" defer></script>
   </head>
   <body>
-    <div id="header">
-      <div>
-        <h1>Gerardo Perez</h1>
-        <h2>he/him/his</h2>
-
-        <button id = "primaryButton" click="doStuff">click me</button>
+    
+    
+    <div id="container">
+      <div id="navbar">
+        <a id="logo"> GAP </a>
+        <a href = "#about-me"> About Me </a>
+        <a href = "#pictures"> My Work </a>
+        <a href = "#contact-me"> Contact Me </a>
+        <button id="primaryButton" click="doStuff">Dark Mode</button>
       </div>
-      <div>
-        <img id="headshot" src="assets/gapHeadshot.png" />
+      
+      <div id="header">
+        <div>
+          <div>
+            <h1>Gerardo Perez</h1>
+            <h2>he/him/his</h2>
+          </div>
+        </div>
+        <div>
+          <img
+            id="headshot"
+            src="https://cdn.glitch.global/34ab94f0-e628-42ae-ac8f-34f26895f636/IMG-6846.jpg?v=1701297506132"
+          />
+        </div>
+      </div>
+    
+      <div id = "about-me">
+        <h2>
+          About Me
+        </h2>
+        <p>
+          Hello, I am a college student who takes pictures for fun. Most of my images focus on landscapes and environments. My work isn't very abstract; they are simply places that have formed naturally or have been created by humans, which is true for most of my pictures. I am very fond of nature and enjoy seeing it in its rawest form. Most of my images have been taken in San Francisco, Denver, and Chicago. My most recent work has been in San Francisco, which is why the quality is drastically better. Feel free to use any of the pictures; I have no problem with that.
+        </p>
+      </div>
+      
+      <div id ="pictures">
+        <h2>
+          My Work
+        </h2>
+        <div id = "location-buttons">
+          <button id="Chicago"  class = "locationButton" click="doStuff">Chicago</button>
+          <button id="Denver"  class = "locationButton" click="doStuff">Denver</button>
+          <button id="San Francisco" class = "locationButton" click="doStuff">San Francisco</button>
+        </div>
+        <div class="gallery" id = "san-francisco-photos">
+          <img class="photo-taken-1" src="https://i.imgur.com/sdtgEbk.jpg" alt="This is a picture of houses. It was taken from a hill in the Golden Gate Park."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/He4Uvdr.jpg" alt="This is a picture of a mural in San Francisco that is meant to represent Temescal, the area."/>
+          <img class="photo-taken-2" src="https://i.imgur.com/cYnc2nm.jpg" alt="When exploring the beach, I saw a building pretty far offshore that was evidently abandoned. Based on the mood, I thought it best to take a picture of it"/>
+          <img class="photo-taken-3" src="https://i.imgur.com/FdQ88ul.jpg" alt="Something I always wanted to try was taking a picture through a natural lens. This picture is one of my attempts at that"/>
+          <img class="photo-taken-2" src="https://i.imgur.com/XCHM0Zb.jpg" alt="Something I always wanted to try was taking a picture through a natural lens. This picture is one of my attempts at that"/>
+          <img class="photo-taken-2" src="https://i.imgur.com/w1ydluD.jpg" alt="Something I always wanted to try was taking a picture through a natural lens. This picture is one of my attempts at that"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/R2HRaPf.jpg" alt="My usual subject for pictures is usually landscapes or pigeons. Luckily, this time I was able to spot a cool looking bird"/>
+          <img class="photo-taken-3" src="https://i.imgur.com/xCKmf0h.jpg" alt="Pigeons are something I tend to take a picture of. This is mainly because they're not afraid of humans, so they're the perfect subject"/>
+          <img class="photo-taken-2" src="https://i.imgur.com/q6SD9kJ.jpg" alt="This image reminded me of something I saw in the show Our Planet due to the natural setting and the birds in their natural habitat."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/4LS6x5b.jpg" alt="This has become one of my all time favorite pictures. The green is very vibrant and the bird is very dark. The contrast is something I really enjoy from this picture."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/OLn4R0c.jpg" alt="This is a picture I took from the Golden Gate Bridge. It was honestly an amazing view. I was luckily able to take this even though it was really foggy that day."/>
+          <img class="photo-taken-2" src="https://i.imgur.com/c7x0DEW.jpg" alt="This image is of another pigeon that I took at a park in San Francisco. I really like the glare of the pigeon's chest."/>
+          <img class="photo-taken-3" src="https://i.imgur.com/OeRRaIs.jpg" alt="This picture is of the Golden Gate Park. The thing I love from this picture is the ferris wheel peeping through the palm trees."/>
+          <img class="photo-taken-3" src="https://i.imgur.com/hWDmD3s.jpg" alt="This picture is of a goose. It's a close up of its head as it was "/>
+          <img class="photo-taken-2" src="https://i.imgur.com/VV3Vuof.jpg" alt="These are just flowers that I thought looked very beautiful"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/lsqopzZ.jpg" alt="This picture was amazing to me. If you look closely, you can see the droplets falling from the feathers of the goose."/>
+          <img class="photo-taken-2" src="https://i.imgur.com/tRvErMM.jpg" alt="This picture is just of some trees. I enjoyed seeing the clear sky with the dark green trees. The contrast looks splendid."/>
+          <img class="photo-taken-3" src="https://i.imgur.com/beNwkKH.jpg" alt="This picture gives me a warm feeling. The washed down wood and light sky makes me feel at home and welcome."/>
+          <img class="photo-taken-2" src="https://i.imgur.com/I2cQ32P.jpg" alt="This is another perspective picture I took. The image peeks through the tall grass to see a very vibrant building."/>
+          <img class="photo-taken-3" src="https://i.imgur.com/OyAaBfD.jpg" alt="This picture looks like photoshop to me. It outlines the diversity of nature to me. To this day, I'm surprised at the amount of things I managed to capture."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/lMXUPFt.jpg" alt="This picture is of a rock getting hit by waves. I love seeing the waves and how they were captured in this image"/>
+          <img class="photo-taken-2" src="https://i.imgur.com/yHzS2XN.jpg" alt="This image is also one that makes me feel at home. It has a lot of vibrant colors and a beautiful building that peeks through."/>
+          <img class="photo-taken-3" src="https://i.imgur.com/M76Sfd9.jpg" alt="This picture is of the side of a hill. I was astonished to see the steepness of it and the sediments there."/>
+          <img class="photo-taken-2" src="https://i.imgur.com/nW9KyVy.jpg" alt="This is a far away picture of the rock pictured before. I just enjoy that the rock still manages to be the focus of attention despite the beautiful sea and greenery."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/tWHUbuB.jpg" alt="This rock reminded me of the bigger one pictured before. The main difference is that this one is smaller in size and holds fewer birds."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/HaBMpz9.jpg" alt="This was one of the few pictures I took of the Golden Gate Bridge. Throughout my stay in San Francisco, it was never foggy at the bridge."/>
+        </div>
+        
+        <div class = "gallery" id = "chicago-photos">
+          <img class="photo-taken-1" src="https://i.imgur.com/rp7nndb.jpg" alt="This is a picture of two pigeons. In all honesty, there's nothing exceptionally remarkable about them, they just looked cool to me"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/yk9hfqR.jpg" alt="Here's the two pigeons again. They were one of the first subjects I tried to accurately capture"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/XJqrJ1y.jpg" alt="I tried focusing on one pigeon to catch all the details."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/4WVHtYP.jpg" alt="This is another instance of trying to focus on one pigeon to catch all the details."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/HScY7dE.jpg" alt="The pigeon was giving me main character vibes so I decided to document it"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/xX8MYLT.jpg" alt="I love having the pigeon be a part of this picture through its silhouette"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/vhXllPu.jpg" alt="I love how the sunlight shines through the clouds in this picture"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/0KMklVQ.jpg" alt="This is another instance of a single subject and contrasting it with the scene."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/UM0FaCh.jpg" alt="This picture just focuses on the sun"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/SJjf3rn.jpg" alt="This picture also focuses on the sun but it highlights its rays"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/Ds9viWi.jpg" alt="This picture looks like a portrait to me. It focuses on the bird while highlighting the environment it's in."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/L4gKmZF.jpg" alt="This picture is a part of a collection of three; this one specifically focuses on the scenery as a whole"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/PGw3dmh.jpg" alt="This picture is a part of a collection of three; this one specifically focuses on the sunset and its rays"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/Tc5KBPd.jpg" alt="This picture is a part of a collection of three; this one specifically focuses on the greenery"/>
+        </div>
+        
+        <div class = "gallery" id = "denver-photos">
+          <img class="photo-taken-1" src="https://i.imgur.com/T4acD0O.jpg" alt="This is a picture of a frozen lake. The ice looks really blue due to how bright the sky was."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/rOTeWre.jpg" alt="This picture focuses on the mountain range and compares their rough nature to the flat ice."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/SoYHfq9.jpg" alt="This picture focuses on the mountain range and compares their rough nature to the flat snow."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/mArR3C5.jpg" alt="This picture focuses on the leafless trees, especially looking at how they span the image"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/HRLnUJM.jpg" alt="This picture is of a path that leads to an ample field."/>
+          <img class="photo-taken-1" src="https://i.imgur.com/TJ99S7Y.jpg" alt="This picture is of a plane with a background of trees and a mountain"/>
+          <img class="photo-taken-1" src="https://i.imgur.com/kaGDZq9.jpg" alt="This image focuses on the mountain and its foggy background"/>
+        </div>
+        
+      </div>
+      
+      <div id = "contact-me">
+        <h2>
+          Contact Me
+        </h2>
+        <div id = "contact-logos">
+          <a href = "mailto:gerardoperez8a@gmail.com"><img src = "https://cdn.glitch.global/34ab94f0-e628-42ae-ac8f-34f26895f636/1011336_email_envelope_mail_message_send_icon.png?v=1701392638971" /></a>
+          <a href = "https://www.linkedin.com/in/gerardo-a-perez/"><img src = "https://cdn.glitch.global/34ab94f0-e628-42ae-ac8f-34f26895f636/734383_in_linked_media_online_social_icon%20(1).png?v=1701392643565" /></a>
+          <a href = "https://github.com/geperez8"><img src = "https://cdn.glitch.global/34ab94f0-e628-42ae-ac8f-34f26895f636/1221583_github_logo_media_social_icon.png?v=1701392637458" /></a>
+          <a href = "https://www.instagram.com/a.simple.account/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><img src = "https://cdn.glitch.global/34ab94f0-e628-42ae-ac8f-34f26895f636/734394_instagram_media_online_social_icon.png?v=1701392632894" /></a>
+        </div>
       </div>
     </div>
+    
+    <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
   </body>
 </html>

@@ -1,26 +1,212 @@
-html{
-    font-family: 'Nunito', sans-serif;
-    background-color: aliceblue;
+:root {
+  --primary-color: #e3e5e6;
+  --secondary-color: #535b71;
+  --inner-text: #f5f7f9;
+  --outer-text: #535b71;
 }
 
-#header{
-    display: flex;
+html {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--primary-color);
 }
 
-#headshot{
-    width : 300px;
-    border-radius: 20px;
+
+#header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 900px;
 }
+
+#headshot {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.44) 5px 5px 10px;
+}
+
+
 
 #header > div {
-    width : 30%;
-    margin: 20px 10%;
-    text-align: center;
+  width: 50%;
+  color: var(--outer-text);
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items:center;
 }
 
-#primaryButton{
-    background-color: white;
-    border-radius: 10px;
-    padding: 7px 12px;
-    cursor: pointer;
+#primaryButton {
+  color: var(--secondary-color);
+  background-color: var(--inner-text);
+  border-radius: 10px;
+  padding: 7px 12px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.22) 5px 5px 10px;
+  border: 0px;
+  font-size: 15px;
+}
+
+#navbar {
+  width: 80%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--secondary-color);
+  color: var(--inner-text);
+  padding: 20px 5%;
+  font-size: 20px;
+  margin: 20px 40px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.44) 5px 5px 10px;
+  
+}
+
+#navbar > a {
+  text-decoration:none;
+  color: var(--inner-text);
+}
+
+#container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  
+}
+
+#logo {
+  font-weight: bold;
+}
+
+#about-me {
+  width: 60%;
+  max-width: 1600px;
+  margin: 30px;
+  background-color: var(--secondary-color);
+  color: var(--inner-text);
+  padding: 10px 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.44) 5px 5px 10px;
+}
+
+#pictures > div > img {
+  width: 100%;
+  max-width: 490px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#pictures > div{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+#pictures > div > button{
+  color: var(--secondary-color);
+  background-color: var(--inner-text);
+  border-radius: 10px;
+  padding: 7px 12px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.22) 5px 5px 10px;
+  border: 0px;
+  height: fit-content;
+  font-size: 15px;
+  margin-left: 5%;
+  margin-right:5%;
+}
+
+#pictures{
+  width: 60%;
+  max-width: 1600px;
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--inner-text);
+  padding: 10px 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.44) 5px 5px 10px;
+}
+
+#pictures > h2{
+  text-align: center;
+}
+
+
+/* Style the modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1000px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact-me {
+  width: 60%;
+  max-width: 1600px;
+  margin: 30px;
+  background-color: var(--secondary-color);
+  color: var(--inner-text);
+  padding: 10px 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.44) 5px 5px 10px;
+}
+
+#contact-logos{
+  margin: 30px 50px;
+  display: flex;
+  justify-content:center;
+}
+#contact-logos > a{
+  text-align:center;
+  width: 25%;
+}
+#contact-logos > a > img{
+  width: 50%;
+  max-width: 125px;
 }
